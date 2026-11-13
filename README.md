@@ -53,15 +53,23 @@ Deploy the model using Streamlit.
 
 #### 5. Results
 
-The following models were evaluated:
+The following models were evaluated after hypertuned:
 
 ## Model Comparison
 
+Before hypertuned:
 | Model | MAE | MSE | R2 Score |
 |---|---:|---:|---:|
-| Linear Regression | 14.902038 | 3361.677939| 0.901890	|
-| Decision Tree | 14.087541 | 3347.144716 | 0.902314 |
-| Random Forest | 12.371065 | 3115.001715 | 0.909089 |
+| Linear Regression | 14.892246 | 3360.487695| 0.901925	|
+| K-Nearest Neighbors| 45.082222 | 6255.441778 | 0.817436 |
+| Random Forest | 12.851630 | 3326.890213 | 0.902905 |
+
+After hypertuned:
+| Model | MAE | MSE | R2 Score |
+|---|---:|---:|---:|
+| Linear Regression | 14.892246 | 3360.487695| 0.901925	|
+| K-Nearest Neighbors| 43.973960 | 6130.739467 | 0.821075 |
+| Random Forest | 12.135158 | 3093.946999 | 0.909704 |
 
 
 ### 6. Key Insights and Findings
