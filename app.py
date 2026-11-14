@@ -90,7 +90,7 @@ def load_model():
     return day_encoder, scaler, model
 
 
-day_encoder, scaler, model = load_model()
+encoder, scaler, model = load_model()
 
 
 # ---------------- HEADER ----------------
@@ -122,11 +122,6 @@ with col1:
         step=1
     )
 
-    vehicle = st.number_input(
-        "Vehicle Number",
-        min_value=0,
-        step=1
-    )
 
     day_value = st.date_input(
         "Travel Date",
@@ -221,13 +216,12 @@ if predict_button:
     features = pd.DataFrame(
         [[
             route,
-            day_encoder.transform(
+            encoder.transform(
                 [day_value.strftime("%A")]
             )[0],
             incident_classes.index(incident),
             min_gap,
             direction_codes[direction],
-            vehicle,
             day_value.day,
             day_value.month,
             day_value.year,
@@ -240,7 +234,6 @@ if predict_button:
             "Incident",
             "Min Gap",
             "Direction",
-            "Vehicle",
             "Day_Date",
             "Month",
             "Year",
@@ -266,8 +259,7 @@ if predict_button:
     )
 
     st.info(
-        f"Estimated delay for Route No {route}, "
-        f"Vehicle {vehicle}."
+        f"Estimated delay for Route No {route}."
     )
 
 
