@@ -17,7 +17,7 @@ The prediction may help passengers understand the expected delay and support bet
 
 ### 3. Dataset
 
-#### Dataset Source: Link: https://www.kaggle.com/datasets/karmansinghbains/ttc-delays-and-routes-2023[sd1.1]
+#### Dataset Source: Link: https://www.kaggle.com/datasets/karmansinghbains/ttc-delays-and-routes-2023
 #### (Note: Taken dataset is an Excel Format. Converted into CSV.)
 
 #### Dataset Size: 
