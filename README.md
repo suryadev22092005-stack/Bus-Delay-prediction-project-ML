@@ -60,16 +60,16 @@ The following models were evaluated after hypertuned:
 Before hypertuned:
 | Model | MAE | MSE | R2 Score |
 |---|---:|---:|---:|
-| Linear Regression | 14.892246 | 3360.487695| 0.901925	|
-| K-Nearest Neighbors| 45.082222 | 6255.441778 | 0.817436 |
-| Random Forest | 12.851630 | 3326.890213 | 0.902905 |
+| Linear Regression | 12.410612 | 385.465765| 0.977127	|
+| K-Nearest Neighbors| 34.984585 | 2385.954229 | 0.858422 |
+| Random Forest | 9.942233 | 368.672669 | 0.978124 |
 
 After hypertuned:
 | Model | MAE | MSE | R2 Score |
 |---|---:|---:|---:|
-| Linear Regression | 14.892246 | 3360.487695| 0.901925	|
-| K-Nearest Neighbors| 43.973960 | 6130.739467 | 0.821075 |
-| Random Forest | 12.135158 | 3093.946999 | 0.909704 |
+| Linear Regression | 12.410612 | 385.465765| 0.977127	|
+| K-Nearest Neighbors| 34.213101 | 2306.046186 | 0.863164 |
+| Random Forest | 8.815631 | 211.747698 | 0.987435 |
 
 
 ### 6. Key Insights and Findings
